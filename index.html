@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Github Hub</title>
+		<!--  [if lt IE 9] -->
+
+		<!--  [endif] -->	
+		<link rel="stylesheet" href="css/site.css">
+		</head>
+	<body>
+		<header>
+			<h1>Github Hub</h1>
+			<p><b>This</b> is a <i>site</i> </p>
+			<a href="http://github.com">GITHUB</a>
+			<nav>
+			<ul>
+			 <li><a href="/index.html">Home</a></li>
+			 <li><a href="/contact.html">Contact</a></li>
+			 <li><a href="/about.html">About</a></li>
+			 </ul>
+			</nav>
+		</header>
+		<section>
+			<p>In this sample site, we'll show a list of <a href="http://github.com">Github</a> projects and data about those project. </p>
+		</section>
+		<form action = "http://wilder.azurewebsites.net/echo" method="POST">
+			<label for="searchPhrase">Search Phrase: </label>
+			<input name="searchPhrase" id="searchPhrase" /><br/>
+			<input type="checkbox" name="useStarts" checked="true" id="useStarts"> 
+			<label for="useStarts">Use stars?</label><br/>
+			<label for="longChoise">Language:</label>
+			<select name="longChoise" id="longChoise">
+				<option selected="true">All</option>
+				<option>JavaScript</option>
+				<option>C#</option>
+				<option>Java</option>
+				<option>Ruby</option>
+			</select><br/>
+			<input type="submit" value="search"/>
+		</form>
+		<footer>
+			&copy; 2014 Shawn Wildermuth LLC
+		</footer>
+	</body>
+</html>
