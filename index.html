@@ -5,23 +5,23 @@
 		<!--  [if lt IE 9] -->
 
 		<!--  [endif] -->	
-		<link rel="stylesheet" href="css/site.css">
+		<link rel="stylesheet" href="css/site.css">		
 		</head>
 	<body>
+	<div class="container">
 		<header>
-			<div class="size-image"><img src="img/logo.png" class="bordered-image"></div>
-			<div>This is a site to search Github for interesting projects. </div>			
-			<nav>
+		<nav>
 			<ul>
 			 <li><a href="/index.html">Home</a></li>
 			 <li><a href="/contact.html">Contact</a></li>
 			 <li><a href="/about.html">About</a></li>
 			 </ul>
 			</nav>
+			<div class="size-image"><img src="img/logo.png" class="bordered-image"></div>
+			<div>This is a site to search Github for interesting projects. </div>				
 		</header>
 		<section id="main">
-			<p>In this sample site, we'll show a list of <a href="http://github.com">Github</a> projects and data about those project. </p>
-		</section>
+			<p>In this sample site, we'll show a list of <a href="http://github.com">Github</a> projects and data about those project. </p>		
 		<form action = "http://wilder.azurewebsites.net/echo" method="POST" class="bordered-image simple-form">
 			<label for="searchPhrase">Search Phrase: </label>
 			<input name="searchPhrase" id="searchPhrase" /><br/>
@@ -37,8 +37,20 @@
 			</select><br/>
 			<input type="submit" value="search"/>
 		</form>
+		<div id="results" class="bordered-image">
+			This is where result will live....eventually
+		</div>
+		</section>
 		<footer>
 			&copy; 2014 Shawn Wildermuth LLC
 		</footer>
+		</div>
+		<script type="text/javascript">
+			var msg = "Hello JavaScript";
+			console.log(msg);
+
+			var resultsDiv = document.getElementById("results");
+			resultsDiv.innerHTML = "<p>This is form JavaScript</p>"
+		</script>
 	</body>
 </html>
